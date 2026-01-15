@@ -1,99 +1,101 @@
-C:.\
-│   .editorconfig\
-│   .gitignore\
-│   application.properties\
-│   dependency-reduced-pom.xml\
-│   pom.xml\
-│   README.md\
-│   shortener.db\
-│\
-├───.github\
-│   └───workflows\
-│           ci.yml\
-│\
-├───.idea\
-│       .gitignore\
-│       compiler.xml\
-│       encodings.xml\
-│       jarRepositories.xml\
-│       misc.xml\
-│       workspace.xml\
-│\
-├───.mvn\
-├───src\
-│   ├───main\
-│   │   ├───java\
-│   │   │   └───org\
-│   │   │       └───example\
-│   │   │           └───shorter\
-│   │   │                   AppConfig.java\
-│   │   │                   ConfigLoader.java\
-│   │   │                   Link.java\
-│   │   │                   LinkRepository.java\
-│   │   │                   LinkService.java\
-│   │   │                   Main.java\
-│   │   │                   UserIdProvider.java\
-│   │   │\
-│   │   └───resources\
-│   └───test\
-│       └───java\
-│           └───org\
-│               └───example\
-│                   └───shoter\
-│                           ConfigLoaderTest.java\
-│                           LinkRepositoryTest.java\
-│                           LinkServiceTest.java\
-│\
-└───target\
-    │   link-short-1.0-SNAPSHOT.jar\
-    │   original-link-short-1.0-SNAPSHOT.jar\
-    │\
-    ├───classes\
-    │   └───org\
-    │       └───example\
-    │           └───shorter\
-    │                   AppConfig.class\
-    │                   ConfigLoader.class\
-    │                   Link.class\
-    │                   LinkRepository.class\
-    │                   LinkService.class\
-    │                   Main.class\
-    │                   UserIdProvider.class\
-    │\
-    ├───generated-sources\
-    │   └───annotations\
-    ├───generated-test-sources\
-    │   └───test-annotations\
-    ├───maven-archiver\
-    │       pom.properties\
-    │    \
-    ├───maven-status\
-    │   └───maven-compiler-plugin\
-    │       ├───compile\
-    │       │   └───default-compile\
-    │       │           createdFiles.lst\
-    │       │           inputFiles.lst\
-    │       │\
-    │       └───testCompile\
-    │           └───default-testCompile\
-    │                   createdFiles.lst\
-    │                   inputFiles.lst\
-    │\
-    ├───surefire-reports\
-    │       org.example.shorter.ConfigLoaderTest.txt\
-    │       org.example.shorter.LinkRepositoryTest.txt\
-    │       org.example.shorter.LinkServiceTest.txt\
-    │       TEST-org.example.shorter.ConfigLoaderTest.xml\
-    │       TEST-org.example.shorter.LinkRepositoryTest.xml\
-    │       TEST-org.example.shorter.LinkServiceTest.xml\
-    │\
-    └───test-classes\
-        └───org\
-            └───example\
-                └───shorter\
-                        ConfigLoaderTest.class\
-                        LinkRepositoryTest.class\
-                        LinkServiceTest.class\
+```
+C:.
+│   .editorconfig
+│   .gitignore
+│   application.properties
+│   dependency-reduced-pom.xml
+│   pom.xml
+│   README.md
+│   shortener.db
+│
+├───.github
+│   └───workflows
+│           ci.yml
+│
+├───.idea
+│       .gitignore
+│       compiler.xml
+│       encodings.xml
+│       jarRepositories.xml
+│       misc.xml
+│       workspace.xml
+│
+├───.mvn
+├───src
+│   ├───main
+│   │   ├───java
+│   │   │   └───org
+│   │   │       └───example
+│   │   │           └───shorter
+│   │   │                   AppConfig.java
+│   │   │                   ConfigLoader.java
+│   │   │                   Link.java
+│   │   │                   LinkRepository.java
+│   │   │                   LinkService.java
+│   │   │                   Main.java
+│   │   │                   UserIdProvider.java
+│   │   │
+│   │   └───resources
+│   └───test
+│       └───java
+│           └───org
+│               └───example
+│                   └───shoter
+│                           ConfigLoaderTest.java
+│                           LinkRepositoryTest.java
+│                           LinkServiceTest.java
+│
+└───target
+    │   link-short-1.0-SNAPSHOT.jar
+    │   original-link-short-1.0-SNAPSHOT.jar
+    │
+    ├───classes
+    │   └───org
+    │       └───example
+    │           └───shorter
+    │                   AppConfig.class
+    │                   ConfigLoader.class
+    │                   Link.class
+    │                   LinkRepository.class
+    │                   LinkService.class
+    │                   Main.class
+    │                   UserIdProvider.class
+    │
+    ├───generated-sources
+    │   └───annotations
+    ├───generated-test-sources
+    │   └───test-annotations
+    ├───maven-archiver
+    │       pom.properties
+    │    
+    ├───maven-status
+    │   └───maven-compiler-plugin
+    │       ├───compile
+    │       │   └───default-compile
+    │       │           createdFiles.lst
+    │       │           inputFiles.lst
+    │       │
+    │       └───testCompile
+    │           └───default-testCompile
+    │                   createdFiles.lst
+    │                   inputFiles.lst
+    │
+    ├───surefire-reports
+    │       org.example.shorter.ConfigLoaderTest.txt
+    │       org.example.shorter.LinkRepositoryTest.txt
+    │       org.example.shorter.LinkServiceTest.txt
+    │       TEST-org.example.shorter.ConfigLoaderTest.xml
+    │       TEST-org.example.shorter.LinkRepositoryTest.xml
+    │       TEST-org.example.shorter.LinkServiceTest.xml
+    │
+    └───test-classes
+        └───org
+            └───example
+                └───shorter
+                        ConfigLoaderTest.class
+                        LinkRepositoryTest.class
+                        LinkServiceTest.class
+```
 
 Проект имеет стандартную структуру Maven-приложения. В корне располагаются файлы сборки и конфигурации, включая pom.xml, который описывает зависимости, плагины и процесс сборки, файл application.properties с основными настройками сервиса, а также README.md, содержащий описание проекта и инструкции по использованию. Здесь же может находиться файл базы данных SQLite, используемый приложением для хранения сокращённых ссылок.
 Исходный код приложения расположен в каталоге src/main/java и разделён по пакетам. В этом каталоге находятся классы, отвечающие за запуск консольного интерфейса, бизнес-логику сервиса сокращения ссылок, работу с базой данных, загрузку конфигурации и идентификацию пользователя. Каталог src/main/resources предназначен для хранения ресурсов приложения и может использоваться для конфигурационных файлов или других вспомогательных данных.
@@ -105,112 +107,132 @@ C:.\
 
 Основное взаимодействие пользователя происходит через набор консольных команд, которые вводятся в терминале после запуска приложения. Каждая команда обрабатывается в главном цикле программы, реализованном в классе Main, и далее передаётся в слой бизнес-логики, представленный классом LinkService.
 
-commands:\    
-  create \<url\> [limit]\
-  open \<code\>\
-  list\
-  info \<code\>\
-  set-limit \<code\> \<limit\>\
-  delete \<code\>\
-  uuid\
-  help\
-  exit\
-config:\
-  ttl=PT24H, cleanup=PT30S, default.limit=5\
-examples:\
-  create https://www.google.com/ 3\
-  create "https://www.google.com/" 5\
-  open Ab3xK91Q\
-\>
+```
+commands:
+  create <url> [limit]
+  open <code>
+  list
+  info <code>
+  set-limit <code> \<limit\>
+  delete <code>
+  uuid
+  help
+  exit
+config:
+  ttl=PT24H, cleanup=PT30S, default.limit=5
+examples:
+  create https://www.google.com/ 3
+  create "https://www.google.com/" 5
+  open Ab3xK91Q
+>
+```
 
 Команда create \<url\> [limit] используется для создания новой сокращённой ссылки. Пользователь указывает исходный URL и, при необходимости, лимит переходов. Если лимит не задан, используется значение по умолчанию, определённое в конфигурации приложения. При выполнении команды сервис проверяет корректность URL, создаёт уникальный короткий код и сохраняет ссылку в базе данных. В терминале пользователю выводится сгенерированный код, установленный лимит переходов и время жизни ссылки. Таким образом, команда create является основной точкой входа для добавления новых ссылок в систему.
 
-create https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D 5\
-code: dJm6187k\
-limit: 5\
-ttl: PT24H\
-\>
+```
+create https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D 5
+code: dJm6187k
+limit: 5
+ttl: PT24H
+>
+```
 
 Команда open \<code\> предназначена для использования сокращённой ссылки. При её выполнении сервис ищет ссылку по указанному коду, проверяет, не истёк ли срок её действия и не превышен ли лимит переходов. Если все условия соблюдены, количество кликов увеличивается на единицу. Учёт кликов выполняется атомарно, что гарантирует корректное поведение даже при нескольких последовательных обращениях. В зависимости от конфигурации приложение либо открывает исходный URL в браузере, либо выводит его в терминал. Если лимит переходов исчерпан, ссылка автоматически блокируется и повторное использование становится невозможным.
 
-open dJm6187k\
-OPENED: https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D\
-\>
+```
+open dJm6187k
+OPENED: https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D
+>
+```
 
 Команда list позволяет пользователю получить список всех созданных им ссылок. В выводе отображаются короткие коды, исходные URL, количество использованных и доступных переходов, а также статус активности ссылки. Эта команда используется для общего контроля состояния всех ссылок текущего пользователя.
 
-list dJm6187k\
------\
-code: dJm6187k\
-url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D\
-clicks: 1/5 active=true\
-expiresMs: 1768528370436\
-\>
+```
+list dJm6187k
+-----
+code: dJm6187k
+url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D
+clicks: 1/5 active=true
+expiresMs: 1768528370436
+>
+```
 
 Команда info \<code\> предоставляет подробную информацию о конкретной ссылке. Она показывает исходный URL, количество переходов, статус активности и временные метки создания и истечения срока действия. Доступ к этой информации разрешён только владельцу ссылки, что обеспечивает базовый уровень разграничения доступа внутри сервиса.
 
-info dJm6187k\
-code: dJm6187k\
-url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D\
-clicks: 1/5\
-active: true\
-createdMs: 1768441970436\
-expiresMs: 1768528370436\
-\>
+```
+info dJm6187k
+code: dJm6187k
+url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D
+clicks: 1/5
+active: true
+createdMs: 1768441970436
+expiresMs: 1768528370436
+>
+```
 
 Команда set-limit \<code\> \<limit\> используется для изменения максимального количества переходов по ссылке. При выполнении команды сервис проверяет права пользователя и, в случае успешной проверки, обновляет лимит в базе данных. Это позволяет гибко управлять уже созданными ссылками без необходимости создавать их заново.
 
-set-limit dJm6187k 8\
-OK\
-\> list dJm6187k\
------\
-code: dJm6187k\
-url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D\
-clicks: 1/8 active=true\
-expiresMs: 1768528370436\
-\>
+```
+set-limit dJm6187k 8
+OK
+> list dJm6187k
+-----
+code: dJm6187k
+url : https://www.minecraft.net/ru-ru/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D
+clicks: 1/8 active=true
+expiresMs: 1768528370436
+>
+```
 
 Команда delete \<code\> предназначена для удаления ссылки. После её выполнения ссылка полностью удаляется из базы данных и становится недоступной для дальнейшего использования. Как и в случае других управляющих команд, операция доступна только владельцу ссылки.
 
-delete dJm6187k\
-OK\
-\> list\
-(empty)\>
+```
+delete dJm6187k
+OK
+> list
+(empty)>
+```
 
 Команда uuid выводит уникальный идентификатор текущего пользователя. Этот идентификатор используется сервисом для привязки ссылок к конкретному пользователю и хранится локально, что позволяет сохранять состояние между запусками приложения.
 
-uuid\
-319dd436-8e2c-44b1-9c4c-21a86b8281b1\
-\>
+```
+uuid
+319dd436-8e2c-44b1-9c4c-21a86b8281b1
+>
+```
 
 Команды help и exit используются для получения справочной информации и завершения работы приложения соответственно. Команда help выводит список доступных команд и текущие параметры конфигурации, а команда exit завершает выполнение программы.
 
-help\
-user: 319dd436-8e2c-44b1-9c4c-21a86b8281b1\
-commands:\
-  create \<url\> [limit]\
-  open \<code\>\
-  list\
-  info \<code\>\
-  set-limit \<code\> \<limit\>\
-  delete \<code\>\
-  uuid\
-  help\
-  exit\
-config:\
-  ttl=PT24H, cleanup=PT30S, default.limit=5\
-examples:\
-  create https://www.google.com/ 3\
-  create "https://www.google.com/" 5\
-  open Ab3xK91Q\
-\> exit\
+```
+help
+user: 319dd436-8e2c-44b1-9c4c-21a86b8281b1
+commands:
+  create <url> [limit]
+  open <code>
+  list
+  info <code>
+  set-limit <code> <limit>
+  delete <code>
+  uuid
+  help
+  exit
+config:
+  ttl=PT24H, cleanup=PT30S, default.limit=5
+examples:
+  create https://www.google.com/ 3
+  create "https://www.google.com/" 5
+  open Ab3xK91Q
+> exit
 0
+```
 
 Дополнительно в справочной информации отображаются активные параметры конфигурации, такие как время жизни ссылки (ttl), период очистки истёкших записей (cleanup) и лимит переходов по умолчанию (default.limit). Эти значения загружаются из файла конфигурации при запуске приложения и напрямую влияют на поведение сервиса.
 
-config:\
-  ttl=PT24H, cleanup=PT30S, default.limit=5\
-    
+```
+config:
+  ttl=PT24H, cleanup=PT30S, default.limit=5
+```
+ 
 Как протестировать.
 
 Код тестируется с помощью модульных тестов на JUnit 5 и AssertJ. Тесты лежат в src/test/java и запускаются стандартными командами Maven. Чтобы прогнать тесты локально, в терминале из корня проекта выполняют mvn test. Maven соберёт проект и запустит все классы тестов, которые оканчиваются на *Test. Результаты выполнения можно посмотреть в папке target/surefire-reports, где сохраняются текстовые и XML-отчёты.
